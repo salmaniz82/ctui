@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix___004-turkey" width="28.499" height="18.999" data-name="004-turkey" viewBox="0 0 28.499 18.999">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#f0f0f0}
+        </style>
+    </defs>
+    <path id="prefix__Rectangle_1176" d="M0 0H28.499V18.999H0z" data-name="Rectangle 1176" style="fill:#d80027"/>
+    <g id="prefix__Group_545" data-name="Group 545" transform="translate(5.639 5.348)">
+        <path id="prefix__Path_314" d="M220.287 216.787l.979 1.35 1.586-.514-.981 1.348.979 1.349-1.585-.516-.981 1.348v-1.667l-1.585-.516 1.586-.514z" class="prefix__cls-2" data-name="Path 314" transform="translate(-212.166 -214.818)"/>
+        <path id="prefix__Path_315" d="M106.757 188.938a3.373 3.373 0 1 1 1.6-6.341 4.152 4.152 0 1 0 0 5.936 3.357 3.357 0 0 1-1.6.405z" class="prefix__cls-2" data-name="Path 315" transform="translate(-101.308 -181.413)"/>
+    </g>
+</svg>

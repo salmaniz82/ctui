@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix___001-ethiopia" width="29" height="19" data-name="001-ethiopia" viewBox="0 0 29 19">
+    <defs>
+        <style>
+            .prefix__cls-5{fill:#f2dd30}
+        </style>
+    </defs>
+    <path id="prefix__Path_317" d="M29 94.609H0v-5.833a.5.5 0 0 1 .5-.5h28a.5.5 0 0 1 .5.5v5.833z" data-name="Path 317" transform="translate(0 -88.276)" style="fill:#73af00"/>
+    <path id="prefix__Path_318" d="M28.5 318.242H.5a.5.5 0 0 1-.5-.5v-5.833h29v5.833a.5.5 0 0 1-.5.5z" data-name="Path 318" transform="translate(0 -299.242)" style="fill:#ff4b55"/>
+    <path id="prefix__Rectangle_1204" d="M0 0H29V6.333H0z" data-name="Rectangle 1204" transform="translate(0 6.333)" style="fill:#ffe15a"/>
+    <path id="prefix__Path_319" d="M162.056 156.075a6 6 0 1 1-6-6.005 6 6 0 0 1 6 6.005z" data-name="Path 319" transform="translate(-141.556 -146.57)" style="fill:#4173cd"/>
+    <g id="prefix__Group_548" data-name="Group 548" transform="translate(9.902 4.683)">
+        <path id="prefix__Path_320" d="M175.42 174.268h3.487l.789-2.428.21.651-1.146 3.53-.341-.249.357-1.1h-2.8zm1.742 5.369l1.078-3.314-2.065-1.5h.681l3 2.179-.341.249-.935-.68-.868 2.672-.551.4zm5.644 0l-2.822-2.05-2.064 1.5.211-.642 3-2.184.128.4-.933.675 2.269 1.652.212.646zm1.742-5.369l-2.82 2.055.789 2.428-.551-.4-1.145-3.53h.419l.357 1.1 2.27-1.652h.68zm-4.564-3.314l1.078 3.314h2.554l-.552.407h-3.709l.131-.407h1.156l-.868-2.667z" class="prefix__cls-5" data-name="Path 320" transform="translate(-175.386 -170.954)"/>
+        <path id="prefix__Path_321" d="M179.526 195.251h-.2v-2.6h.2v2.6zm4.434-3.228l-2.472-.8.062-.187 2.474.8-.064.187zm-9.069 0l-.062-.187 2.475-.8.061.187-2.474.8zm5.911-3.295l-.163-.115 1.529-2.1.159.115-1.525 2.1zm-2.748 0l-1.531-2.1.162-.115 1.528 2.1-.158.115z" class="prefix__cls-5" data-name="Path 321" transform="translate(-174.828 -185.63)"/>
+    </g>
+</svg>

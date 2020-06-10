@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix___005-iran" width="28.499" height="18.999" data-name="005-iran" viewBox="0 0 28.499 18.999">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#f0f0f0}.prefix__cls-3{fill:#d80027}
+        </style>
+    </defs>
+    <path id="prefix__Rectangle_1177" d="M0 0H28.499V18.999H0z" class="prefix__cls-1" data-name="Rectangle 1177"/>
+    <path id="prefix__Rectangle_1178" d="M0 0H28.499V6.333H0z" data-name="Rectangle 1178" style="fill:#6da544"/>
+    <g id="prefix__Group_546" data-name="Group 546" transform="translate(0 7.517)">
+        <path id="prefix__Rectangle_1179" d="M0 0H28.499V6.333H0z" class="prefix__cls-3" data-name="Rectangle 1179" transform="translate(0 5.149)"/>
+        <path id="prefix__Path_316" d="M216.424 220.383h-.994c.008.109.013.22.013.33a3.76 3.76 0 0 1-.5 1.955 1.8 1.8 0 0 1-.487.526v-2.812h-.991v2.812a1.8 1.8 0 0 1-.487-.526 3.76 3.76 0 0 1-.5-1.955c0-.111 0-.221.013-.33h-.994q-.01.163-.01.33c0 2.038 1.089 3.635 2.478 3.635s2.478-1.6 2.478-3.635c-.009-.113-.012-.221-.019-.33z" class="prefix__cls-3" data-name="Path 316" transform="translate(-199.707 -220.383)"/>
+    </g>
+    <g id="prefix__Group_547" data-name="Group 547" transform="translate(0 5.507)">
+        <path id="prefix__Rectangle_1180" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1180" transform="translate(2.478)"/>
+        <path id="prefix__Rectangle_1181" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1181"/>
+        <path id="prefix__Rectangle_1182" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1182" transform="translate(4.956)"/>
+        <path id="prefix__Rectangle_1183" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1183" transform="translate(7.435)"/>
+        <path id="prefix__Rectangle_1184" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1184" transform="translate(9.913)"/>
+        <path id="prefix__Rectangle_1185" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1185" transform="translate(12.391)"/>
+        <path id="prefix__Rectangle_1186" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1186" transform="translate(14.869)"/>
+        <path id="prefix__Rectangle_1187" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1187" transform="translate(17.347)"/>
+        <path id="prefix__Rectangle_1188" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1188" transform="translate(19.826)"/>
+        <path id="prefix__Rectangle_1189" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1189" transform="translate(22.304)"/>
+        <path id="prefix__Rectangle_1190" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1190" transform="translate(24.782)"/>
+        <path id="prefix__Rectangle_1191" d="M0 0H1.239V1.359H0z" class="prefix__cls-1" data-name="Rectangle 1191" transform="translate(27.26)"/>
+        <path id="prefix__Rectangle_1192" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1192" transform="translate(2.478 6.564)"/>
+        <path id="prefix__Rectangle_1193" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1193" transform="translate(0 6.564)"/>
+        <path id="prefix__Rectangle_1194" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1194" transform="translate(4.956 6.564)"/>
+        <path id="prefix__Rectangle_1195" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1195" transform="translate(7.435 6.564)"/>
+        <path id="prefix__Rectangle_1196" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1196" transform="translate(9.913 6.564)"/>
+        <path id="prefix__Rectangle_1197" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1197" transform="translate(12.391 6.564)"/>
+        <path id="prefix__Rectangle_1198" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1198" transform="translate(14.869 6.564)"/>
+        <path id="prefix__Rectangle_1199" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1199" transform="translate(17.347 6.564)"/>
+        <path id="prefix__Rectangle_1200" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1200" transform="translate(19.826 6.564)"/>
+        <path id="prefix__Rectangle_1201" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1201" transform="translate(22.304 6.564)"/>
+        <path id="prefix__Rectangle_1202" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1202" transform="translate(24.782 6.564)"/>
+        <path id="prefix__Rectangle_1203" d="M0 0H1.239V1.421H0z" class="prefix__cls-1" data-name="Rectangle 1203" transform="translate(27.26 6.564)"/>
+    </g>
+</svg>
