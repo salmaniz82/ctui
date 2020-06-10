@@ -303,6 +303,17 @@ function AddReadMore() {
     });
 }
 
+$('.colorBall').each(function(idx, ele) {
+
+
+    var targetEle =  $(ele);
+
+    var colorHEx = targetEle.attr('data-bgColor');
+
+    targetEle.css({backgroundColor: colorHEx});
+
+});
+
 
 
 
@@ -322,7 +333,16 @@ var controller = new ScrollMagic.Controller();
 
 var tl = new TimelineMax();
 
-tl.to(testomonialCanvas, 10, { y : '-70%', opacity: 1});
+tl.to(testomonialCanvas, 10, { y : '-70%', opacity: 1, onComplete:doneTestomonialsCB});
+
+
+function doneTestomonialsCB(event)
+{
+
+    tl.seek(0);
+
+    
+}
 
 var scene = new ScrollMagic.Scene({
     triggerElement: '#reviews',
@@ -341,13 +361,3 @@ var scene = new ScrollMagic.Scene({
     .addTo(controller);
 
 
-$('.colorBall').each(function(idx, ele) {
-
-
-var targetEle =  $(ele);
-
-var colorHEx = targetEle.attr('data-bgColor');
-
-    targetEle.css({backgroundColor: colorHEx});
-
-});

@@ -2,41 +2,16 @@
 
 <div class="container-fluid bg-white">
     <div class="row">
-        <div class="col-3 px-1 bg-orange-vertical-gradient position-fixed" id="sticky-sidebar" style="height: 100vh">
-            <h3 class="qt-sideHeading_main text-center text-white t-lg">Quick Order</h3>
 
+        <!-- quick order sidebar -->
 
-            <ul class="qto__nav">
+        <?php
 
-                <li class="active"><a href="#">
-                        <span class="itemIndex">1</span>
-                        <span class="itemTitle">Item List</span>
-                        <span class="itemDesc">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-                        </span>
-                    </a></li>
+        $activeItem = 1;
 
-                <li><a href="#">
-                        <span class="itemIndex">2</span>
-                        <span class="itemTitle">Item List</span>
-                        <span class="itemDesc">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-                        </span>
-                    </a></li>
+        include_once 'partials/quickorder_nav.php' ?>
+        <!-- quick side bar ends -->
 
-
-                <li><a href="#">
-                        <span class="itemIndex">3</span>
-                        <span class="itemTitle">Item List</span>
-                        <span class="itemDesc">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-                        </span>
-                    </a></li>
-
-            </ul>
-
-
-        </div>
         <div class="col offset-3 clear-col-15-pad" id="main">
 
             <div class="quickHeaderWrapper post-cl-pad-pusher bg-tab-grey">
@@ -51,7 +26,7 @@
                     </div>
                 </div>
 
-                <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                <p class="post-cl-pad-pusher">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore magna aliquyam erat, sed.</p>
 
 
@@ -75,9 +50,10 @@
                     <tbody>
 
                     <tr>
-                        <th scope="row" >
+                        <th scope="row">
                             <div class="inputWrapper colorPicker">
-                                <input type="text" placeholder="Select Color Code" name="colorCode" class="form-control" value="Product Name 3315 Sea Blue 1">
+                                <input type="text" placeholder="Select Color Code" name="colorCode" class="form-control"
+                                       value="Product Name 3315 Sea Blue 1">
                                 <span class="colorBall" data-bgColor="#4bb3ff"></span>
                             </div>
 
@@ -133,7 +109,8 @@
                         <th scope="row">
 
                             <div class="inputWrapper colorPicker">
-                                <input type="text" placeholder="Select Color Code" name="colorCode" class="form-control" value="Product Name 3315 Sea Red 1">
+                                <input type="text" placeholder="Select Color Code" name="colorCode" class="form-control"
+                                       value="Product Name 3315 Sea Red 1">
                                 <span class="colorBall" data-bgColor="#ff4b4b"></span>
                             </div>
 
@@ -190,7 +167,8 @@
 
                             <div class="inputWrapper colorPicker">
 
-                                <input type="text" placeholder="Select Color Code" name="colorCode" class="form-control" value="">
+                                <input type="text" placeholder="Select Color Code" name="colorCode" class="form-control"
+                                       value="">
 
                             </div>
 
@@ -241,21 +219,71 @@
 
                     </tr>
 
-
                     <tr>
                         <td colspan="6">
-                            <button class="btn addMoreBtn"> <i class="fas fa-plus"></i>  Add More </button>
+                            <button class="btn addMoreBtn"><i class="fas fa-plus"></i> Add More</button>
                         </td>
                     </tr>
-
                     </tbody>
                 </table>
-
             </section>
 
+
+
+
+            <div class="clearfix">&nbsp;</div>
+
+
+            <section class="">
+
+                <div class="">
+
+                    <div class="pad-lr-20">
+
+                        <div class="w-100 divider-top-gray">
+
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2">
+
+                                <div class="d-flex quickOrderMeta">
+                                    <div class="text-right qk_order_metaLightBottom">VAT:</div>
+                                    <div class="text-left  qk_order_metaLightBottom">USD 15.67</div>
+                                </div>
+
+                                <div class="d-flex quickOrderMeta">
+                                    <div class="flex-48p-base text-right">Total Price:</div>
+                                    <div class="flex-48p-base text-left">USD 645</div>
+                                </div>
+
+                            </div>
+                            <div class="col-4">
+                                <img class="" src="images/quick-order/discount/discount.png" srcset="images/quick-order/discount/discount@2x.png 2x, images/quick-order/discount/discount@3x.png 3x" class="Group-529">
+                            </div>
+                            <div class="col-6">asdflakjdfkja </div>
+
+                        </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+            </section>
 
         </div>
     </div>
 </div>
 
 <?php include_once 'doc-footer.php'; ?>
+
