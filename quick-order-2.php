@@ -7,7 +7,7 @@
 
         <?php
 
-        $activeItem = 1;
+        $activeItem = 2;
 
         include_once 'partials/quickorder_nav.php' ?>
         <!-- quick side bar ends -->
@@ -18,7 +18,7 @@
 
                 <div class="quickTabHeader d-flex justify-content-between bd-highlight mb-3">
                     <div class="p-2 ">
-                        <h4 class="qt-mainTabHeading">Make Item List</h4>
+                        <h4 class="qt-mainTabHeading">Delivery Information</h4>
                     </div>
 
                     <div class="p-2">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
 
-                <p class="post-cl-pad-pusher">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore magna aliquyam erat, sed.</p>
 
 
@@ -228,68 +228,8 @@
                 </table>
             </section>
 
-
-
-
-            <div class="clearfix">&nbsp;</div>
-
-
-            <section class="">
-
-                <div class="">
-
-                    <div class="pad-lr-20 pad-b-20p">
-
-                        <div class="w-100 divider-top-gray">
-
-
-                        <div class="row no-gutters">
-
-                            <div class="col-4">
-
-                                <div class="d-flex quickOrderMeta mt-30p">
-                                    <div class="flex-48p-base text-right qk_order_metaLightBottom">VAT:</div>
-                                    <div class="flex-48p-base text-left  qk_order_metaLightBottom ml-5p">USD 15.67</div>
-                                </div>
-
-                                <div class="d-flex quickOrderMeta">
-                                    <div class="flex-48p-base text-right t-20px">Total Price:</div>
-                                    <div class="flex-48p-base text-left t-20px ml-5p font-weight-bold">USD 645</div>
-                                </div>
-
-                            </div>
-                            <div class="col-4">
-                                <img class="" src="images/quick-order/discount/discount.png" srcset="images/quick-order/discount/discount@2x.png 2x, images/quick-order/discount/discount@3x.png 3x" class="Group-529">
-                            </div>
-                            <div class="col-4">
-
-                                <div class="actionConrolls d-flex justify-content-end">
-                                    <a href="#" class="actionItem next orange "></a>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        </div>
-
-
-
-                    </div>
-
-
-
-
-
-                </div>
-
-
-
-            </section>
-
         </div>
     </div>
 </div>
 
 <?php include_once 'doc-footer.php'; ?>
-

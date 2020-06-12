@@ -806,12 +806,17 @@ background-image: linear-gradient(to bottom, #ff7c2b 50%, #ffa46e);
 
 
 .t-bold {font-weight: 600}
-.t-xl {font-size: 48px;}
-.t-lg {font-size: 40px;}
-.t-md {font-size: 18px;}
-.t-std {font-size: 16px;}
-.t-sm {font-size: 14px;}
 
+.t-sm {font-size: 14px;}
+.t-std {font-size: 16px;}
+.t-md {font-size: 18px;}
+
+.t-20px {
+	font-size: 20px;
+}
+
+.t-lg {font-size: 40px;}
+.t-xl {font-size: 48px;}
 
 @media screen and (max-width: 800px)
 {
@@ -1294,7 +1299,6 @@ ul#review_indicators li.active a {
 	transition: all 0.3s ease-in;
 	*/
 
-	
 }
 
 
@@ -1306,7 +1310,7 @@ ul#review_indicators li.active a {
 	#testomonials_mask {
 		overflow: hidden;
 		margin-top: 150px;
-		height: 800px;
+		height: 900px;
 	}
 
 
@@ -2297,6 +2301,10 @@ ul.qto__nav li a .itemDesc {
 	padding-right: 30px;
 }
 
+.pad-b-20p {
+	padding-bottom: 20px;
+}
+
 
 .divider-top-gray {
 	border-top: 1px solid #e1e1e1;
@@ -2305,10 +2313,49 @@ ul.qto__nav li a .itemDesc {
 .qk_order_metaLightBottom {
 	color: rgba(22,23,21, 0.5);
 	font-size: 16px;
-	margin-left: 5px;
+
 }
 
 .quickOrderMeta > div {
 	flex: 1;
 }
 
+
+.ml-5p {
+	margin-left: 5px;
+}
+
+.mt-30p {
+	margin-top: 30px;
+}
+
+.actionConrolls .actionItem.next.orange {
+	background-image: url('../images/icons/arrow-next-white.svg');
+	box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.08);
+	background-color: #e46e39;
+}
+
+#testomonials_canvas .testoItem {
+    display: inline-block;
+}
+
+#verticalScroller {
+    position: absolute;
+    width:300px;
+    height: 900px;
+    overflow: hidden;
+
+}
+
+#verticalScroller > div{
+    position:absolute;
+    overflow:hidden;
+}
+
+#verticalScroller.rts > div {
+	top: -150px;
+}
+
+#verticalScroller.rts {
+	left : 300px;
+}

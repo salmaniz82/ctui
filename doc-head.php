@@ -47,5 +47,5 @@
 </head>
 <body id="<?php if(isset($page_slug)) echo $page_slug?>">
 <a href="https://api.whatsapp.com/send?phone=923213867070&text=Hello, I would like more information on your products." class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
+<i class="fab fa-whatsapp my-float"></i>
 </a>

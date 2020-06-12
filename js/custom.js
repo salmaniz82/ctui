@@ -325,7 +325,7 @@ Animate scroll element
 #testomonials_canvas
 */
 
-
+/*
 
 var testomonialCanvas = $("#testomonials_canvas");
 
@@ -341,15 +341,15 @@ function doneTestomonialsCB(event)
 
     tl.seek(0);
 
-    
+
 }
 
 var scene = new ScrollMagic.Scene({
     triggerElement: '#reviews',
-    triggerHook: 0.5
+    triggerHook: 1
   })
     .setTween(tl)
-    /*
+
     .addIndicators({
       name : "Testomonials",  
       colorTrigger: "red",
@@ -357,7 +357,99 @@ var scene = new ScrollMagic.Scene({
       colorEnd: "green",
       indent: 40
     })
-    */
+
     .addTo(controller);
+    */
+
+
+
+
+
+window.verticalScroller = function($elem) {
+
+    var top = parseInt($elem.css("top"));
+
+
+    var temp = -1 * $('#verticalScroller.lft > div').height();
+
+    var noOfItems = $('#verticalScroller.lft > div').length;
+
+    console.log(noOfItems);
+
+    if(top < temp) {
+
+
+        top = 300 * (noOfItems - 1);
+        $elem.css("top", top);
+
+    }
+
+    $elem.animate({ top: (parseInt(top) - 300 ) }, 3000, function () {
+
+        window.verticalScroller($(this))
+
+    });
+};
+
+
+window.verticalScrollerRTS = function($elem) {
+
+    var top = parseInt($elem.css("top"));
+
+
+    var temp = -1 * $('#verticalScroller.rts > div').height();
+
+    var noOfItems = $('#verticalScroller.rts > div').length;
+
+    console.log(noOfItems);
+
+    if(top < temp) {
+
+        top = 300 * (noOfItems - 1);
+        $elem.css("top", top);
+
+    }
+
+    $elem.animate({ top: (parseInt(top) - 300 ) }, 1500, function () {
+
+        window.verticalScrollerRTS($(this))
+
+    });
+};
+
+
+$(document).ready(function() {
+    var i = 0;
+
+    var itemsHeight = [];
+
+    $("#verticalScroller.lft > div").each(function () {
+
+        itemsHeight.push($(this).height());
+
+
+        $(this).css("top", i);
+        i += 300;
+        window.verticalScroller($(this));
+    });
+
+    var j = 0;
+
+    $("#verticalScroller.rts > div").each(function () {
+        $(this).css("top", j);
+        j += 300;
+        window.verticalScrollerRTS($(this));
+    });
+
+
+    console.log(itemsHeight);
+
+});
+
+
+
+
+
+
 
 
