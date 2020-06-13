@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.388" height="36.506" viewBox="0 0 39.388 36.506">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#f6c358}
+        </style>
+    </defs>
+    <g id="prefix__sim">
+        <path id="prefix__Path_246" d="M157.862 234.96h-32.824a3.252 3.252 0 0 1-3.282-3.221v-30.064a3.252 3.252 0 0 1 3.282-3.221h32.824a3.252 3.252 0 0 1 3.282 3.221v30.064a3.252 3.252 0 0 1-3.282 3.221z" data-name="Path 246" transform="translate(-121.756 -198.454)" style="fill:#fcd462"/>
+        <g id="prefix__Group_444" data-name="Group 444">
+            <path id="prefix__Path_247" d="M137.133 210.144h5.247v-11.689h-1.65v10.039h-4.43l-3.331-3.331h-11.213v10.891h15.377v-5.91z" class="prefix__cls-2" data-name="Path 247" transform="translate(-121.756 -198.455)"/>
+            <path id="prefix__Path_248" d="M263.415 236.535l-4.169 4.169v6.722h15.377v-10.891z" class="prefix__cls-2" data-name="Path 248" transform="translate(-235.235 -230.053)"/>
+            <path id="prefix__Path_249" d="M145.849 316.742h-8.8v-5.9h-15.3v10.891h11.149l3.326-3.344h4.4v10.053h1.641v-10.05h4.4l3.335 3.344h11.149v-10.891h-15.3v5.9z" class="prefix__cls-2" data-name="Path 249" transform="translate(-121.757 -291.938)"/>
+        </g>
+    </g>
+</svg>

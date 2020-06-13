@@ -2109,11 +2109,12 @@ a.trashAnchor:hover  {
 	padding-right: 0;
 }
 .post-cl-pad-pusher {
-	padding: 15px 10px;
+	padding: 15px 30px;
 }
 
 .qt-sideHeading_main {
 	margin-top: 35px;
+	padding-left: 20px;
 	font-family: 'axiforma-regular';
 	font-size: 36px;
 	font-stretch: normal;
@@ -2194,7 +2195,7 @@ a.trashAnchor:hover  {
 	position: relative;
 }
 
-.colorBall {
+.colorBall, .colorBallItemInfo {
 	content: "";
 	position: absolute;
 	right: 9px;
@@ -2204,6 +2205,11 @@ a.trashAnchor:hover  {
 	height: 25px;
 	border-radius: 50%;
 	background-color: #fff;
+}
+
+.colorBallItemInfo {
+	left: 0px;
+	top: -2.5px;
 }
 
 
@@ -2309,6 +2315,9 @@ ul.qto__nav li a .itemDesc {
 .divider-top-gray {
 	border-top: 1px solid #e1e1e1;
 }
+.divider-bottom-gray {
+	border-top: 1px solid #e1e1e1;
+}
 
 .qk_order_metaLightBottom {
 	color: rgba(22,23,21, 0.5);
@@ -2358,4 +2367,235 @@ ul.qto__nav li a .itemDesc {
 
 #verticalScroller.rts {
 	left : 300px;
+}
+
+.deliveryCard, .shippingCards, .qoPaymentCards, .quickOrderSummary {
+	display: flex;
+	justify-content: flex-start;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.deliveryCard > div, .shippingCards > div, .qoPaymentCards > div, .quickOrderSummary > div {
+	padding: 10px;
+	flex-basis: 309px;
+	min-width: 200px;
+	border: solid 1px #ededed;
+	border-radius: 6px;
+	box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.08);
+	transition: border .3s ease-in-out;
+	will-change: border;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.deliveryCard > div:hover, .shippingCards > div:hover, .qoPaymentCards > div:hover {
+	border: 2px solid #e46e39;
+}
+
+.deliveryCard > div .qo_deliverPrice, .quickOrderSummary > div .qo_deliverPrice {
+	font-size: 24px;
+	text-align: center;
+	color: #e46e39;
+	font-weight: bold;
+	font-family: 'axiforma-regular'
+}
+
+.deliveryCard > div .qo_duration, .qoPaymentCards .cashOnDeliveryHeading, .quickOrderSummary > div .qo_duration{
+
+	font-family: 'axiforma-regular';
+	font-size: 20px;
+	text-align: center;
+	color: #161715;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.deliveryCard > div .qo_details, .qoPaymentCards .qo_details {
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.79;
+	letter-spacing: normal;
+	text-align: center;
+	color: #707070;
+}
+
+.deliveryCardMainheader {
+	font-size: 22px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.77;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000000;
+}
+
+.c-brand-pink {
+	color: #ff6464;
+}
+
+.qo_note {
+	color: #707070;
+	margin-top: 20px;
+}
+
+.qo_shippingAddress .shippingCards > div, .quickOrderSummary .shippingCards > div {
+	padding: 20px;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.75;
+	letter-spacing: normal;
+	text-align: left;
+	color: #161715;
+}
+
+img.cardSim {
+	width: 39.4px;
+	height: 36.5px;
+}
+
+span.cardDigit {
+
+	font-family: Axiforma;
+	font-size: 15px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.8;
+	letter-spacing: 2.55px;
+	text-align: left;
+	color: #707070;
+	margin-right: 15px;
+}
+
+.cardDigitWrapper {
+	margin-top: 50px;
+}
+
+.cardMeta {
+	margin-top: 25px;
+}
+
+.validThroghText{
+
+	font-size: 5px;
+	display: inline-block;
+	width: 20px;
+
+}
+
+.holderName {
+
+	font-family: CreditCard;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.31;
+	letter-spacing: 2.08px;
+	text-align: left;
+	color: #707070;
+}
+.qoPaymentCards > div {
+	padding: 20px;
+}
+
+
+a[href^='https://api.whatsapp.com'] {
+	border: 1px solid red;
+	display: none
+}
+
+
+.btn.lightCustom{
+	border-radius: 20px;
+	background-color: #f0f0f0;
+	padding: 5px 20px;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.75;
+	letter-spacing: normal;
+	text-align: right;
+	color: #161715;
+}
+
+.quickOrderSummary  {
+	align-items: flex-start;
+}
+
+.itemInfoWrap {
+
+	position: relative;
+
+}
+
+.itemInfoWrap .itemName {
+	padding-left: 30px;
+	display: inline-block;
+}
+
+.fa-1-5x {
+	font-size: 1.5em;
+}
+.fa-1-2x {
+	font-size: 1.2em;
+}
+
+.qo_itemInfoQuantity{
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: top;
+}
+
+.qoBottomOrderSummary > div {
+	margin-bottom: 5px;
+}
+
+.qo_orderSummary_total {
+	font-size: 20px;
+	font-weight: 800;
+	margin-top: 15px;
+}
+
+.alertNote{
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 0.75;
+	letter-spacing: normal;
+	text-align: left;
+	display: block;
+	padding-left: 30px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	position: absolute;
+	top: 25px;
+
+}
+
+.alertNote.danger {
+	color: #ff2929;
+}
+
+.next__arrowText {
+	display: inline-flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.75;
+	letter-spacing: normal;
+	text-align: right;
+	color: #161715;
+	margin-right: 10px;
 }

@@ -154,7 +154,7 @@
 			</div>
 
 
-			<div class="actionConrolls">
+			<div class="actionConrolls freeze">
 
 				<a href="#" class="actionItem previous"></a>
 				<a href="#" class="actionItem next"></a>

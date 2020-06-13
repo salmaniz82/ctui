@@ -16,17 +16,17 @@
 
             <div class="quickHeaderWrapper post-cl-pad-pusher bg-tab-grey">
 
-                <div class="quickTabHeader d-flex justify-content-between bd-highlight mb-3">
-                    <div class="p-2 ">
+                <div class="quickTabHeader d-flex justify-content-between bd-highlight">
+                    <div class="">
                         <h4 class="qt-mainTabHeading">Make Item List</h4>
                     </div>
 
-                    <div class="p-2">
+                    <div class="">
                         <i class="fal fa-times fa-2x "></i>
                     </div>
                 </div>
 
-                <p class="post-cl-pad-pusher">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore magna aliquyam erat, sed.</p>
 
 
@@ -167,8 +167,7 @@
 
                             <div class="inputWrapper colorPicker">
 
-                                <input type="text" placeholder="Select Color Code" name="colorCode" class="form-control"
-                                       value="">
+                                <input type="text" placeholder="Select Color Code" name="colorCode" class="form-control" value="">
 
                             </div>
 
@@ -220,7 +219,7 @@
                     </tr>
 
                     <tr>
-                        <td colspan="6">
+                        <td colspan="3">
                             <button class="btn addMoreBtn"><i class="fas fa-plus"></i> Add More</button>
                         </td>
                     </tr>
@@ -264,7 +263,7 @@
                             <div class="col-4">
 
                                 <div class="actionConrolls d-flex justify-content-end">
-                                    <a href="#" class="actionItem next orange "></a>
+                                    <a href="/quick-order-2.php" class="actionItem next orange "></a>
                                 </div>
 
                             </div>

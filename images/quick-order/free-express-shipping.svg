@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="323" height="30" viewBox="0 0 323 30">
+    <defs>
+        <style>
+            .prefix__cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__Group_528" data-name="Group 528" transform="translate(-638 -688)">
+        <rect id="prefix__Rectangle_1125" width="323" height="30" data-name="Rectangle 1125" rx="6" transform="translate(638 688)" style="fill:#262626"/>
+        <text id="prefix__Free_Express_Shipping_on_Orders_100_" data-name="Free Express Shipping on Orders $100+" transform="translate(679 707)" style="font-size:14px;font-family:Axiforma-SemiBold,Axiforma;font-weight:600;fill:#fff">
+            <tspan x="0" y="0">Free Express Shipping on Orders $100+</tspan>
+        </text>
+        <g id="prefix__truck" transform="translate(647 616.479)">
+            <g id="prefix__Group_484" data-name="Group 484" transform="translate(14.368 88.595)">
+                <g id="prefix__Group_483" data-name="Group 483">
+                    <path id="prefix__Path_256" d="M325.029 304.4a2.878 2.878 0 1 0 2.878 2.878 2.882 2.882 0 0 0-2.878-2.878zm0 4.318a1.439 1.439 0 1 1 1.439-1.439 1.441 1.441 0 0 1-1.439 1.442z" class="prefix__cls-3" data-name="Path 256" transform="translate(-322.151 -304.403)"/>
+                </g>
+            </g>
+            <g id="prefix__Group_486" data-name="Group 486" transform="translate(4.533 88.595)">
+                <g id="prefix__Group_485" data-name="Group 485">
+                    <path id="prefix__Path_257" d="M104.525 304.4a2.878 2.878 0 1 0 2.878 2.878 2.882 2.882 0 0 0-2.878-2.878zm0 4.318a1.439 1.439 0 1 1 1.439-1.439 1.441 1.441 0 0 1-1.439 1.442z" class="prefix__cls-3" data-name="Path 257" transform="translate(-101.647 -304.403)"/>
+                </g>
+            </g>
+            <g id="prefix__Group_488" data-name="Group 488" transform="translate(14.751 79.96)">
+                <g id="prefix__Group_487" data-name="Group 487">
+                    <path id="prefix__Path_258" d="M335.189 111.186a.72.72 0 0 0-.643-.4h-3.79v1.439h3.344l1.959 3.9 1.286-.647z" class="prefix__cls-3" data-name="Path 258" transform="translate(-330.756 -110.79)"/>
+                </g>
+            </g>
+            <g id="prefix__Group_490" data-name="Group 490" transform="translate(9.642 90.778)">
+                <g id="prefix__Group_489" data-name="Group 489">
+                    <path id="prefix__Rectangle_1124" d="M0 0H5.445V1.439H0z" class="prefix__cls-3" data-name="Rectangle 1124"/>
+                </g>
+            </g>
+            <g id="prefix__Group_492" data-name="Group 492" transform="translate(2.039 90.778)">
+                <g id="prefix__Group_491" data-name="Group 491">
+                    <path id="prefix__Path_259" d="M48.929 353.345h-2.494a.72.72 0 1 0 0 1.439h2.495a.72.72 0 1 0 0-1.439z" class="prefix__cls-3" data-name="Path 259" transform="translate(-45.715 -353.345)"/>
+                </g>
+            </g>
+            <g id="prefix__Group_494" data-name="Group 494" transform="translate(2.039 78.521)">
+                <g id="prefix__Group_493" data-name="Group 493">
+                    <path id="prefix__Path_260" d="M66.36 86.379l-1.415-1.823a.719.719 0 0 0-.568-.278h-5.23v-5.037a.72.72 0 0 0-.72-.72H46.435a.72.72 0 1 0 0 1.439h11.273V85a.72.72 0 0 0 .72.72h5.6l1.048 1.35v3.711h-1.995a.72.72 0 1 0 0 1.439h2.71a.72.72 0 0 0 .72-.72v-4.68a.721.721 0 0 0-.151-.441z" class="prefix__cls-3" data-name="Path 260" transform="translate(-45.715 -78.521)"/>
+                </g>
+            </g>
+            <g id="prefix__Group_496" data-name="Group 496" transform="translate(1.175 87.132)">
+                <g id="prefix__Group_495" data-name="Group 495">
+                    <path id="prefix__Path_261" d="M30.383 271.6h-3.31a.72.72 0 1 0 0 1.439h3.31a.72.72 0 0 0 0-1.439z" class="prefix__cls-3" data-name="Path 261" transform="translate(-26.353 -271.597)"/>
+                </g>
+            </g>
+            <g id="prefix__Group_498" data-name="Group 498" transform="translate(0 84.302)">
+                <g id="prefix__Group_497" data-name="Group 497">
+                    <path id="prefix__Path_262" d="M6.86 208.134H.72a.72.72 0 0 0 0 1.439h6.14a.72.72 0 0 0 0-1.439z" class="prefix__cls-3" data-name="Path 262" transform="translate(0 -208.134)"/>
+                </g>
+            </g>
+            <g id="prefix__Group_500" data-name="Group 500" transform="translate(1.175 81.471)">
+                <g id="prefix__Group_499" data-name="Group 499">
+                    <path id="prefix__Path_263" d="M33.213 144.672h-6.14a.72.72 0 0 0 0 1.439h6.14a.72.72 0 0 0 0-1.439z" class="prefix__cls-3" data-name="Path 263" transform="translate(-26.353 -144.672)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

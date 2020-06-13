@@ -57,13 +57,9 @@
 
         var top = parseInt($elem.css("top"));
 
-
-
         // getting height of single elemment and minus to get negative to pull
 
         var temp = -1 * $('#verticalScroller > div').height();
-
-
 
         if(top < temp) {
             /*
@@ -73,7 +69,6 @@
             top = $('#verticalScroller').height();
             $elem.css("top", top);
         }
-
 
         $elem.animate({ top: (parseInt(top)-60) }, 1200, function () {
 

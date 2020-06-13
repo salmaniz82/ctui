@@ -137,7 +137,7 @@ $('#review_indicators li').click(function(e) {
 });
 
 
-$(".actionConrolls a.actionItem").click(function(e) {
+$(".actionConrolls.freeze a.actionItem").click(function(e) {
 
 
 e.preventDefault();
@@ -303,13 +303,10 @@ function AddReadMore() {
     });
 }
 
-$('.colorBall').each(function(idx, ele) {
-
+$('.colorBall, .colorBallItemInfo').each(function(idx, ele) {
 
     var targetEle =  $(ele);
-
     var colorHEx = targetEle.attr('data-bgColor');
-
     targetEle.css({backgroundColor: colorHEx});
 
 });
@@ -369,7 +366,6 @@ window.verticalScroller = function($elem) {
 
     var top = parseInt($elem.css("top"));
 
-
     var temp = -1 * $('#verticalScroller.lft > div').height();
 
     var noOfItems = $('#verticalScroller.lft > div').length;
@@ -377,72 +373,72 @@ window.verticalScroller = function($elem) {
     console.log(noOfItems);
 
     if(top < temp) {
-
-
         top = 300 * (noOfItems - 1);
         $elem.css("top", top);
-
     }
 
     $elem.animate({ top: (parseInt(top) - 300 ) }, 3000, function () {
-
         window.verticalScroller($(this))
-
     });
 };
 
 
-window.verticalScrollerRTS = function($elem) {
 
-    var top = parseInt($elem.css("top"));
+function pullUpScrollAnimation($elem)
+{
 
+    console.log(requestAnimationFrame);
 
-    var temp = -1 * $('#verticalScroller.rts > div').height();
+    return false;
 
-    var noOfItems = $('#verticalScroller.rts > div').length;
+    var ele = $($elem);
 
-    console.log(noOfItems);
+    var elemTOP = parseInt( ele.css('top') );
 
-    if(top < temp) {
+    ele.css('top', elemTOP -- + 'px');
 
-        top = 300 * (noOfItems - 1);
-        $elem.css("top", top);
+    requestAnimationFrame(pullUpScrollAnimation);
 
-    }
-
-    $elem.animate({ top: (parseInt(top) - 300 ) }, 1500, function () {
-
-        window.verticalScrollerRTS($(this))
-
-    });
-};
+}
 
 
 $(document).ready(function() {
+
     var i = 0;
 
     var itemsHeight = [];
 
-    $("#verticalScroller.lft > div").each(function () {
+    /*
+    * distribute top offset with height and gap of 10px
+    *
+    * */
 
-        itemsHeight.push($(this).height());
+    $("#verticalScroller.lft > div").each(function (idx, value) {
 
+
+        // getting height of current item
+        var currentItemHeight = parseInt( $(this).outerHeight() );
+
+        console.log('currentHeiht:' + currentItemHeight);
+
+        itemsHeight.push(currentItemHeight);
 
         $(this).css("top", i);
-        i += 300;
-        window.verticalScroller($(this));
+
+        var totalHeight = itemsHeight.reduce((a, b) => a + b, 0);
+
+        console.log('total Height' + totalHeight);
+        i = ( totalHeight )  + (itemsHeight.length * 10);
+
+        /*
+         window.verticalScroller($(this));
+         */
+
+        window.pullUpScrollAnimation($(this));
+
+
     });
 
-    var j = 0;
-
-    $("#verticalScroller.rts > div").each(function () {
-        $(this).css("top", j);
-        j += 300;
-        window.verticalScrollerRTS($(this));
-    });
-
-
-    console.log(itemsHeight);
 
 });
 

@@ -1,5 +1,5 @@
 <div class="col-3 px-1 bg-orange-vertical-gradient position-fixed" id="sticky-sidebar" style="height: 100vh">
-    <h3 class="qt-sideHeading_main text-center text-white t-lg">Quick Order</h3>
+    <h3 class="qt-sideHeading_main text-white t-lg">Quick Order</h3>
 
 
     <ul class="qto__nav">
