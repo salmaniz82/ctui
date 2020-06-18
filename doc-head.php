@@ -35,11 +35,13 @@
 
     <link rel="stylesheet" href="assets/fonts/css/fontawesome-all.min.css">
 
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
 
     <script src="js/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 
 
 

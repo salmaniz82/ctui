@@ -137,7 +137,7 @@ $('#review_indicators li').click(function(e) {
 });
 
 
-$(".actionConrolls.freeze a.actionItem").click(function(e) {
+$("#home .actionConrolls.freeze a.actionItem").click(function(e) {
 
 
 e.preventDefault();
@@ -303,7 +303,7 @@ function AddReadMore() {
     });
 }
 
-$('.colorBall, .colorBallItemInfo').each(function(idx, ele) {
+$('.colorBall, .colorBallItemInfo, .pdColorBall').each(function(idx, ele) {
 
     var targetEle =  $(ele);
     var colorHEx = targetEle.attr('data-bgColor');
@@ -443,9 +443,48 @@ $(document).ready(function() {
 });
 
 
+var pdColorBall = document.querySelectorAll(".pdColorBall");
+
+var svgConePath = document.querySelector("#Union_2");
+
+pdColorBall.forEach( (item, index)=> {
+
+    item.addEventListener('click', function(e) {
+
+        var bgColor = this.getAttribute('data-bgcolor')
+        svgConePath.style.fill = bgColor;
+        console.log(bgColor);
+
+    });
+
+});
 
 
+var pdOwl = $('.owl-carousel');
 
+pdOwl.owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+});
 
+$('.pdOwl.previous').click(function(e) {
+    e.preventDefault();
+    pdOwl.trigger('prev.owl.carousel');
+});
 
-
+$('.pdOwl.next').click(function(e) {
+    e.preventDefault();
+    pdOwl.trigger('next.owl.carousel');
+});
