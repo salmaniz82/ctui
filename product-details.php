@@ -34,11 +34,120 @@
         <div class="col-lg-3 col-md-4">
             <div class="svgConeWrapper">
 
-
             <?php include_once 'images/cones-svg/nocolor.svg'?>
             </div>
+
+
+            <div class="pdSideTicketWrapper">
+
+                <div class="ticketItem">
+                        <div class="ticketInner leftItem">
+                            <div class="pdColorBall" data-bgcolor="#f0a527" style="background-color: rgb(240, 165, 39);">
+                            </div>
+                        </div>
+                        <div class="ticketInner rightItem">
+                            <span class="t-xs font-weight-bold dtr">01-000006-3341 Solid Pink</span>
+                            <span class="t-xxs dtr">Yardage: <span class="t-xs font-weight-bold">500</span> </span>
+                            <span class="t-xxs dtr">Ticket : <span class="t-xs font-weight-bold"> 100 </span> </span>
+
+                            <div class="mt-2 ticketSmallQuantity">
+                                <span>Quantity</span>
+                                    <span class="customInputWrapper">
+                                <i class="fas fa-minus fa-sm"></i>
+                                    <span class="qtyDigit">5</span>
+                                <i class="fas fa-plus fa-sm"></i>
+                                </span>
+                            </div>
+
+                        </div>
+
+                    <div class="text-center">
+
+                        <a href="#" class="pdTicketAddtoCart">Add to cart</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
         </div>
         <div class="col-ld-3 col-md-8">
+
+            <div id="gravityProductOveralWrapper">
+
+
+                <div class="row no-gutters">
+
+                    <div class="col-7">
+
+                        <div class="d-flex justify-content-between groupItems">
+                            <label>Yardage</label>
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+
+                        </div>
+
+
+
+                        <div class="d-flex justify-content-between groupItems">
+                            <label>Ticket</label>
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="d-flex justify-content-between groupItems">
+                            <label class="align-self-center">Quantity</label>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text no-bg">
+                                        <i class="fas fa-minus"></i>
+                                    </span>
+                                </div>
+                                <input type="tel" class="form-control qtyCustomInput text-center" value="15">
+                                <div class="input-group-append">
+                                    <span class="input-group-text no-bg">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="col-5">
+                        <div class="gravityPriceWrapper text-right">
+                            <span class="pdGravityPrice">Price</span>
+                            <div><span class="gdcurrency">USD</span>&nbsp;<span class="gdamount">2.45</span></div>
+                        </div>
+
+                        <div class="text-right" style="margin-top: 30px">
+                            <a href="#" class="gravityAddtoCart">Add to cart</a>
+                        </div>
+
+                        <div class="gdnote">
+                            <span> <span class="c-brand-pink">Note:</span> Only Available in 10 days delivery</span>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
 
             <form action="#" method="post" class="" style="margin-top: 40px">
 
@@ -70,7 +179,10 @@
                 for($i=0; $i< sizeof($productItemColor); $i++) :?>
 
                 <div class="pdItem <?php  if($i > 53) echo 'disabled'; ?>">
-                    <div class="pdColorBall" data-bgColor="<?= $productItemColor[$i]?>"></div>
+                    <div class="pdColorBall <?php echo ($i == 9) ? 'has-discount': ''?>" data-bgColor="<?= $productItemColor[$i]?>">
+                        <span class="discountPlaceholder">20% OFF</span>
+                    </div>
+
                     <div class="pdListDetails">01-000006-3341 Solid Pink</div>
                 </div>
 

@@ -306,6 +306,8 @@ function AddReadMore() {
 $('.colorBall, .colorBallItemInfo, .pdColorBall').each(function(idx, ele) {
 
     var targetEle =  $(ele);
+
+
     var colorHEx = targetEle.attr('data-bgColor');
     targetEle.css({backgroundColor: colorHEx});
 
@@ -444,15 +446,29 @@ $(document).ready(function() {
 
 
 var pdColorBall = document.querySelectorAll(".pdColorBall");
-
 var svgConePath = document.querySelector("#Union_2");
+
+var body = document.getElementsByTagName('body')[0];
+
+var gradientProductWrapper = document.getElementById('gravityProductOveralWrapper');
 
 pdColorBall.forEach( (item, index)=> {
 
     item.addEventListener('click', function(e) {
 
-        var bgColor = this.getAttribute('data-bgcolor')
+        var gravityTop = parseInt(this.offsetTop);
+        var gravityLeft = parseInt(this.offsetLeft);
+
+        console.log(gravityLeft);
+
+        body.classList.add('gravityActiviated');
+
+        gradientProductWrapper.style.top = (gravityTop + 85) + 'px';
+
+        var bgColor = this.getAttribute('data-bgcolor');
+
         svgConePath.style.fill = bgColor;
+
         console.log(bgColor);
 
     });

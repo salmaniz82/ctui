@@ -808,7 +808,8 @@ background-image: linear-gradient(to bottom, #ff7c2b 50%, #ffa46e);
 .t-bold {font-weight: 600}
 
 .t-sm {font-size: 14px;}
-.t-xs {font-size: 12px}
+.t-xs {font-size: 12px;}
+.t-xxs {font-size: 10px;}
 .t-std {font-size: 16px;}
 .t-md {font-size: 18px;}
 
@@ -2697,7 +2698,7 @@ a[href^='https://api.whatsapp.com'] {
 
 }
 
-.pdColorWrapper .pdColorBall {
+.pdColorWrapper .pdColorBall, .ticketItem .pdColorBall{
 	width: 45px;
 	height: 45px;
 	border-radius: 55px;
@@ -2705,6 +2706,11 @@ a[href^='https://api.whatsapp.com'] {
 	margin-left: 15.5px;
 	margin-bottom: 8px;
 	cursor: pointer;
+}
+
+.ticketItem .pdColorBall {
+	margin-left: 5px;
+	margin-top: 5px;
 }
 
 .pdListDetails {
@@ -2718,6 +2724,59 @@ a[href^='https://api.whatsapp.com'] {
 	color: #707070;
 	word-break: break-all;
 }
+
+.discountPlaceholder {
+	display: none;
+}
+
+.pdColorBall.has-discount {
+	position: relative;
+}
+
+.pdColorBall.has-discount .discountPlaceholder{
+	position: relative;
+	display: inline-block;
+	font-size: 10px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	color: #707070;
+	margin-top: calc(50%);
+	width: 53px;
+	background-color: #ffea93;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-left: -4px;
+	transform: perspective(100px) rotateX(-40deg);
+}
+
+.pdColorBall.has-discount .discountPlaceholder:before {
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-bottom: 8px solid #e5cc67;
+	border-left: 5px solid transparent;
+	top: -8px;
+	left: 1px;
+
+}
+
+.pdColorBall.has-discount .discountPlaceholder:after {
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-bottom: 8px solid #e5cc67;
+	border-right: 5px solid transparent;
+	top: -8px;
+	right: 1px;
+}
+
+
 
 .pdItem.disabled {
 	position: relative;
@@ -2871,4 +2930,161 @@ a.sowThreads {
 
 .pdSliderControls .actionItem.next {
 	margin-right: 0px;
+}
+
+.pdSideTicketWrapper {
+
+	margin-top: 20px;
+	width: 265px;
+}
+
+.pdSideTicketWrapper .ticketItem {
+	background-color: #fff;
+	width: 250px;
+	height: 190px;
+	border-radius: 8px;
+	box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.08);
+	border: solid 1px #ededed;
+	padding-top: 10px;
+	padding-left: 10px;
+
+}
+
+.pdSideTicketWrapper .ticketItem .ticketInner {
+	float: left;
+
+}
+
+
+.pdSideTicketWrapper .ticketItem .ticketInner.leftItem {
+	width: 60px;
+
+}
+
+.pdSideTicketWrapper .ticketItem .ticketInner.rightItem {
+	width: calc(100% - 65px);
+
+	padding: 10px;
+}
+
+.ticketSmallQuantity {
+	font-size: 10px;
+}
+
+.ticketSmallQuantity {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.ticketSmallQuantity .qtyDigit {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.ticketSmallQuantity .customInputWrapper {
+	border: 1px solid rgba(100,100,100, 0.1);
+	margin-left: 10px;
+	display: flex;
+	width: 75px;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 4px;
+	box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.08);
+	padding: 3px;
+}
+
+
+.dtr {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.pdTicketAddtoCart {
+	background-color: #e46e39;
+	padding: 6px 10px;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.64;
+	letter-spacing: normal;
+	text-align: center;
+}
+
+#gravityProductOveralWrapper {
+
+	display: none;
+	border-radius: 16px;
+	border-top: 1px solid #000;
+	width: 100%;
+	background-color: #ffffff;
+	padding: 20px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+
+#gravityProductOveralWrapper::before {
+
+}
+
+.gravityActiviated #gravityProductOveralWrapper {
+	display: block;
+	color: #000;
+}
+
+#gravityProductOveralWrapper .groupItems {
+	margin-bottom: 10px;
+	align-items: flex-end;
+}
+
+
+
+#gravityProductOveralWrapper .groupItems input, #gravityProductOveralWrapper .groupItems .input-group{
+	flex: 1;
+	margin-right: 10px;
+}
+
+#gravityProductOveralWrapper .groupItems > label {
+	width: 150px;
+	color: #707070;
+}
+
+#gravityProductOveralWrapper .groupItems input.qtyCustomInput {
+	margin-right: 0px ;
+}
+
+.gravityAddtoCart {
+	background-color: #e46e39;
+	padding: 15px 20px;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.64;
+	letter-spacing: normal;
+	text-align: right;
+}
+
+
+.pdGravityPrice {
+	color: #707070;
+}
+
+.gdcurrency, .gdamount {
+	font-weight: bold;
+}
+
+.gdnote {
+	margin-top: 30px;
 }
