@@ -442,6 +442,26 @@ $(document).ready(function() {
     });
 
 
+})
+
+$('.pdItem').on('click', function(e) {
+
+    var that = $(this);
+
+setTimeout(function() {
+
+
+    that.addClass('activatedRowItem');
+
+    console.log('worked');
+
+
+}, 0);
+
+    e.preventDefault();
+
+
+
 });
 
 
@@ -450,24 +470,35 @@ var svgConePath = document.querySelector("#Union_2");
 
 var body = document.getElementsByTagName('body')[0];
 
+var notch = document.getElementsByClassName('gdoverlayNotch')[0];
+
 var gradientProductWrapper = document.getElementById('gravityProductOveralWrapper');
+
+var ticketColorBall = document.querySelector('.ticketItem .pdColorBall');
 
 pdColorBall.forEach( (item, index)=> {
 
     item.addEventListener('click', function(e) {
 
+
+        $('.pdItem').removeClass('activatedRowItem');
+
         var gravityTop = parseInt(this.offsetTop);
         var gravityLeft = parseInt(this.offsetLeft);
 
-        console.log(gravityLeft);
+        console.log('itemTOP' + gravityTop);
 
         body.classList.add('gravityActiviated');
 
         gradientProductWrapper.style.top = (gravityTop + 85) + 'px';
 
+        notch.style.left = (gravityLeft + 15) + 'px';
+
         var bgColor = this.getAttribute('data-bgcolor');
 
         svgConePath.style.fill = bgColor;
+
+        ticketColorBall.style.backgroundColor = bgColor;
 
         console.log(bgColor);
 
@@ -476,7 +507,7 @@ pdColorBall.forEach( (item, index)=> {
 });
 
 
-var pdOwl = $('.owl-carousel');
+var pdOwl = $('#our-products2');
 
 pdOwl.owlCarousel({
     loop:true,
@@ -504,3 +535,32 @@ $('.pdOwl.next').click(function(e) {
     e.preventDefault();
     pdOwl.trigger('next.owl.carousel');
 });
+
+
+
+
+
+var ticketSlider = $('.pdSideTicketWrapper');
+
+
+ticketSlider.owlCarousel({
+    items: 1,
+    nav: true,
+    dots: true,
+    center: true,
+    navText : ['<i class="crsLeft fal fa-arrow-left"></i>', '<i class="crsRight fal fa-arrow-right"></i>'],
+
+});
+
+var qcColorCube = document.querySelectorAll('.qc_color_cube');
+
+
+qcColorCube.forEach(function(item, idx) {
+    var bgColor = item.getAttribute('data-bgColor');
+    item.style.backgroundColor = bgColor;
+
+});
+
+
+
+

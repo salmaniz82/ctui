@@ -6,6 +6,89 @@
 
 <div class="clearfix header_clear"></div>
 
+<div class="modal fade bd-example-modal-lg header_clear" id="exampleModal" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title sow" id="exampleModalLabel">Thread Sizes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <table class="table table-borderless text-center">
+
+                    <thead>
+                    <tr>
+                        <th scope="col">
+                            <div class="mtb_head">Ticket</div>
+                        </th>
+                        <th scope="col">
+                            <div class="mtb_head">Tax</div>
+                        </th>
+                        <th scope="col">
+                            <div class="mtb_head">Makup</div>
+                        </th>
+                        <th scope="col">
+                            <div class="mtb_head">Niddle</div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td scope="row">40</td>
+                        <td scope="row">26</td>
+                        <td scope="row">3000 yds Kingspool</td>
+                        <td scope="row">65 / 9</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">40</td>
+                        <td scope="row">26</td>
+                        <td scope="row">5000 yds Kingspool</td>
+                        <td scope="row">75 / 11</td>
+                    </tr>
+
+
+                    <tr>
+                        <td scope="row">30</td>
+                        <td scope="row">30</td>
+                        <td scope="row">3000 yds</td>
+                        <td scope="row">65 / 9</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">60</td>
+                        <td scope="row">16</td>
+                        <td scope="row">500 yds Kingspool</td>
+                        <td scope="row">65 / 9</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">12</td>
+                        <td scope="row">60</td>
+                        <td scope="row">1500 yds Kingspool</td>
+                        <td scope="row">100 / 16</td>
+                    </tr>
+
+
+                    </tbody>
+                    </thead>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <div><span class="c-brand-pink">Note</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio esse impedit ipsa optio
+                        quasi, qui quo repellendus tenetur voluptate. Architecto in iusto minus molestias, omnis optio
+                        quaerat suscipit vero.</p></div>
+            </div>
+        </div>
+    </div>
+</div><!-- modal ends here -->
+
 
 <div class="container-fluid" id="productDetailHero">
 
@@ -38,9 +121,12 @@
             </div>
 
 
-            <div class="pdSideTicketWrapper">
+            <div class="pdSideTicketWrapper owl-carousel owl-theme">
 
-                <div class="ticketItem">
+                <div class="item ticketItem has-discount">
+
+                    <span class="ticketDiscountHolder">40% Off</span>
+
                         <div class="ticketInner leftItem">
                             <div class="pdColorBall" data-bgcolor="#f0a527" style="background-color: rgb(240, 165, 39);">
                             </div>
@@ -69,6 +155,167 @@
 
                 </div>
 
+                <div class="item ticketItem has-discount">
+
+                    <span class="ticketDiscountHolder">40% Off</span>
+
+                    <div class="ticketInner leftItem">
+                        <div class="pdColorBall" data-bgcolor="#f0a527" style="background-color: rgb(240, 165, 39);">
+                        </div>
+                    </div>
+                    <div class="ticketInner rightItem">
+                        <span class="t-xs font-weight-bold dtr">01-000006-3341 Solid Pink</span>
+                        <span class="t-xxs dtr">Yardage: <span class="t-xs font-weight-bold">500</span> </span>
+                        <span class="t-xxs dtr">Ticket : <span class="t-xs font-weight-bold"> 100 </span> </span>
+
+                        <div class="mt-2 ticketSmallQuantity">
+                            <span>Quantity</span>
+                            <span class="customInputWrapper">
+                                <i class="fas fa-minus fa-sm"></i>
+                                    <span class="qtyDigit">5</span>
+                                <i class="fas fa-plus fa-sm"></i>
+                                </span>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <a href="#" class="pdTicketAddtoCart">Add to cart</a>
+
+                    </div>
+
+                </div>
+
+                <div class="item ticketItem has-discount">
+
+                    <span class="ticketDiscountHolder">40% Off</span>
+
+                    <div class="ticketInner leftItem">
+                        <div class="pdColorBall" data-bgcolor="#f0a527" style="background-color: rgb(240, 165, 39);">
+                        </div>
+                    </div>
+                    <div class="ticketInner rightItem">
+                        <span class="t-xs font-weight-bold dtr">01-000006-3341 Solid Pink</span>
+                        <span class="t-xxs dtr">Yardage: <span class="t-xs font-weight-bold">500</span> </span>
+                        <span class="t-xxs dtr">Ticket : <span class="t-xs font-weight-bold"> 100 </span> </span>
+
+                        <div class="mt-2 ticketSmallQuantity">
+                            <span>Quantity</span>
+                            <span class="customInputWrapper">
+                                <i class="fas fa-minus fa-sm"></i>
+                                    <span class="qtyDigit">5</span>
+                                <i class="fas fa-plus fa-sm"></i>
+                                </span>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <a href="#" class="pdTicketAddtoCart">Add to cart</a>
+
+                    </div>
+
+                </div>
+
+                <div class="item ticketItem has-discount">
+
+                    <span class="ticketDiscountHolder">40% Off</span>
+
+                    <div class="ticketInner leftItem">
+                        <div class="pdColorBall" data-bgcolor="#f0a527" style="background-color: rgb(240, 165, 39);">
+                        </div>
+                    </div>
+                    <div class="ticketInner rightItem">
+                        <span class="t-xs font-weight-bold dtr">01-000006-3341 Solid Pink</span>
+                        <span class="t-xxs dtr">Yardage: <span class="t-xs font-weight-bold">500</span> </span>
+                        <span class="t-xxs dtr">Ticket : <span class="t-xs font-weight-bold"> 100 </span> </span>
+
+                        <div class="mt-2 ticketSmallQuantity">
+                            <span>Quantity</span>
+                            <span class="customInputWrapper">
+                                <i class="fas fa-minus fa-sm"></i>
+                                    <span class="qtyDigit">5</span>
+                                <i class="fas fa-plus fa-sm"></i>
+                                </span>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <a href="#" class="pdTicketAddtoCart">Add to cart</a>
+
+                    </div>
+
+                </div>
+
+                <div class="item ticketItem has-discount">
+
+                    <span class="ticketDiscountHolder">40% Off</span>
+
+                    <div class="ticketInner leftItem">
+                        <div class="pdColorBall" data-bgcolor="#f0a527" style="background-color: rgb(240, 165, 39);">
+                        </div>
+                    </div>
+                    <div class="ticketInner rightItem">
+                        <span class="t-xs font-weight-bold dtr">01-000006-3341 Solid Pink</span>
+                        <span class="t-xxs dtr">Yardage: <span class="t-xs font-weight-bold">500</span> </span>
+                        <span class="t-xxs dtr">Ticket : <span class="t-xs font-weight-bold"> 100 </span> </span>
+
+                        <div class="mt-2 ticketSmallQuantity">
+                            <span>Quantity</span>
+                            <span class="customInputWrapper">
+                                <i class="fas fa-minus fa-sm"></i>
+                                    <span class="qtyDigit">5</span>
+                                <i class="fas fa-plus fa-sm"></i>
+                                </span>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <a href="#" class="pdTicketAddtoCart">Add to cart</a>
+
+                    </div>
+
+                </div>
+
+                <div class="item ticketItem has-discount">
+
+                    <span class="ticketDiscountHolder">40% Off</span>
+
+                    <div class="ticketInner leftItem">
+                        <div class="pdColorBall" data-bgcolor="#f0a527" style="background-color: rgb(240, 165, 39);">
+                        </div>
+                    </div>
+                    <div class="ticketInner rightItem">
+                        <span class="t-xs font-weight-bold dtr">01-000006-3341 Solid Pink</span>
+                        <span class="t-xxs dtr">Yardage: <span class="t-xs font-weight-bold">500</span> </span>
+                        <span class="t-xxs dtr">Ticket : <span class="t-xs font-weight-bold"> 100 </span> </span>
+
+                        <div class="mt-2 ticketSmallQuantity">
+                            <span>Quantity</span>
+                            <span class="customInputWrapper">
+                                <i class="fas fa-minus fa-sm"></i>
+                                    <span class="qtyDigit">5</span>
+                                <i class="fas fa-plus fa-sm"></i>
+                                </span>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <a href="#" class="pdTicketAddtoCart">Add to cart</a>
+
+                    </div>
+
+                </div>
+
+
             </div>
 
 
@@ -76,6 +323,9 @@
         <div class="col-ld-3 col-md-8">
 
             <div id="gravityProductOveralWrapper">
+
+
+                <div class="gdoverlayNotch"></div>
 
 
                 <div class="row no-gutters">
@@ -213,7 +463,11 @@
         <div class="col-6">
             <div class="d-flex justify-content-between">
                 <h4 class="pdSectionHeading">Application</h4>
-                <a href="#" class="sowThreads">Sow & Threads</a>
+
+                    <a href="#" class="sowThreads" data-toggle="modal" data-target=".bd-example-modal-lg">Sow & Threads</a>
+
+
+
             </div>
 
 
@@ -273,7 +527,7 @@
 
 
 
-        <div class="row owl-carousel owl-theme" id="our-products">
+        <div class="row owl-carousel owl-theme" id="our-products2">
 
             <div class="item">
                 <div class="product_itemBox">
@@ -367,12 +621,7 @@
 
     </div>
 
-
-
-
 </div>
-
-
 
 
 

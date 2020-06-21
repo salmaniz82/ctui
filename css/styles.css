@@ -1,3 +1,22 @@
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 1em;
+	background-color: rgba(50,50,50,0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(50,50,50,0.6);
+}
+::-webkit-scrollbar-track {
+	border-radius: 1em;
+	background-color: rgba(50,50,50,0.1);
+}
+::-webkit-scrollbar-track:hover {
+	background-color: rgba(50,50,50,0.2);
+}
+
 .bg-orange-vertical-gradient {
 	background-image: url('../images/quick-order/quick-side-bottom-bg.jpg'), linear-gradient(to bottom, #ff7a3e, #e46e39);
 	background-position: bottom center, top center;
@@ -2607,16 +2626,15 @@ a[href^='https://api.whatsapp.com'] {
 }
 
 #falyoutCardHolder {
-	border: 1px solid red;
 	box-shadow: -10px 0 26px 0 rgba(0, 0, 0, 0.07);
 	background-color: #f8f8f8;
 	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
+
 	position: fixed;
 	top: 79px;
 	left: 70%;
 	width: 425px;
+	z-index: 1000;
 }
 
 #productDetailHero {
@@ -2868,6 +2886,9 @@ img.productImage {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: flex-start;
+	height: 280px;
+	overflow-y: scroll;
 }
 
 .appChipWrapper > div {
@@ -3016,7 +3037,6 @@ a.sowThreads {
 }
 
 #gravityProductOveralWrapper {
-
 	display: none;
 	border-radius: 16px;
 	border-top: 1px solid #000;
@@ -3028,12 +3048,25 @@ a.sowThreads {
 	top: 0;
 	left: 0;
 	z-index: 100;
+	box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.08);
+	transition: top .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 
-
+/*
 #gravityProductOveralWrapper::before {
-
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	display: block;
+	left: 50%;
+	position: absolute;
+	top: -8px;
+	transform: rotate(45deg);
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
 }
+*/
 
 .gravityActiviated #gravityProductOveralWrapper {
 	display: block;
@@ -3087,4 +3120,177 @@ a.sowThreads {
 
 .gdnote {
 	margin-top: 30px;
+}
+
+.gdoverlayNotch {
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	display: block;
+	left: 50%;
+	position: absolute;
+	top: -6px;
+	transform: rotate(45deg);
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	transition: all 0.3s ease-in-out;
+}
+
+.mtb_head {
+	display: inline-block;
+	background-color: #e46e39;
+	padding: 5px 20px;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.modal-title.sow {
+	font-size: 30px;
+}
+
+.activatedRowItem {
+	height: 300px !important;
+	pointer-events: none;
+}
+
+
+.ticketDiscountHolder {
+	display: none;
+}
+
+.ticketItem.has-discount {
+	position: relative;
+	overflow: hidden;
+}
+
+.has-discount .ticketDiscountHolder{
+	display: block;
+	background-color: #ffc541;
+	color: #ffffff;
+	text-align: center;
+	transform: perspective(100px) rotate(-45deg);
+	position: absolute;
+	top: 25px;
+	width: 200px;
+	left: -60px;
+
+}
+
+
+.crsLeft, .crsRight{
+	color: #000000 !important;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #fff;
+	line-height: 2rem;
+	border: 1px solid rgba(100,100,100,0.3);
+	position: absolute;
+	top: 35%;
+
+}
+
+.crsLeft {
+	left: -16px;
+}
+
+.crsRight {
+	right: 0px;
+}
+
+
+
+.pdSideTicketWrapper .owl-dots {
+	display: flex;
+	justify-content: center;
+}
+
+.pdSideTicketWrapper button.owl-dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(100,100,100,0.4) !important;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.pdSideTicketWrapper button.owl-dot.active {
+	background-color: #e46e39 !important;
+	border: none !important;
+}
+
+.pdSideTicketWrapper button.owl-dot:active, .pdSideTicketWrapper button.owl-dot:focus  {
+	border: none !important;
+	outline: none !important;
+}
+
+.qcQty {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 13px;
+}
+
+.qc_color_cube {
+	display: inline-block;
+	width: 60px;
+	height: 18px;
+	border-radius: 50px;
+	background-color: transparent;
+	margin-top: 30px;
+
+}
+
+
+table.qcCartDetails {
+
+	margin-bottom: 0;
+	table-layout: fixed;
+}
+
+
+table.qcCartDetails tbody tr {
+
+}
+
+table.qcCartDetails tbody tr td > div {
+
+	margin-bottom: 5px;
+}
+
+table.qcCartDetails tbody tr td:nth-child(2){
+	vertical-align: middle;
+}
+
+table.qcCartDetails tbody tr td:nth-child(2) .fal {
+	font-size: 1.1rem;
+}
+
+table.qcCartDetails tbody tr td:nth-child(3) {
+	vertical-align: middle;
+	color: #000;
+	font-size: 13px;
+
+}
+
+table.qcCartDetails tbody tr td:nth-child(4) {
+	vertical-align: middle;
+	padding-right: 10px;
+}
+
+table.qcCartDetails tbody tr td:nth-child(1){
+	padding-bottom: 30px;
+}
+
+table.qcCartDetails tbody tr:last-child {
+	background-image: linear-gradient(97deg, #ff7a3e 2%, #e46e39 100%);
+
+}
+
+table.qcCartDetails tbody tr:last-child td div.totalSummary {
+
+	margin-top: 20px;
+
 }

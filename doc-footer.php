@@ -18,6 +18,9 @@
 
 <script src="./js/owl.carousel.js"></script>
 
+
+<script src="./js/jquery.autoscroll.js"> </script>
+
 <script type="text/javascript" src="./js/custom.js"></script>
 
 
